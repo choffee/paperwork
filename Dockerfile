@@ -1,4 +1,4 @@
-from debian
+from debian:12.11
 env DEBIAN_FRONTEND noninteractive
 run sed -e 's/httpredir.debian.org/debian.mirrors.ovh.net/g' -i /etc/apt/sources.list
 arg http_proxy
